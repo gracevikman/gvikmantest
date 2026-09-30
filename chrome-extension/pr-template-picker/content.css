@@ -1,0 +1,32 @@
+.pr-template-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--fgColor-default, #1f2328);
+}
+
+.pr-template-picker select {
+  padding: 5px 12px;
+  color: var(--fgColor-default, #1f2328);
+  background-color: var(--bgColor-default, #ffffff);
+  border: 1px solid var(--borderColor-default, #d0d7de);
+  border-radius: 6px;
+}
+
+.pr-template-picker-message {
+  color: var(--fgColor-muted, #59636e);
+}
+
+.pr-template-picker--floating {
+  position: fixed;
+  top: 70px;
+  right: 16px;
+  z-index: 1000;
+  max-width: 320px;
+  padding: 8px 12px;
+  background-color: var(--bgColor-muted, #f6f8fa);
+  border: 1px solid var(--borderColor-default, #d0d7de);
+  border-radius: 6px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PR Template Picker options</title>
+    <style>
+      body { font-family: system-ui, sans-serif; min-width: 360px; padding: 12px; }
+      input { width: 100%; box-sizing: border-box; margin: 8px 0; }
+      .hint { color: #59636e; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h3>GitHub token (optional)</h3>
+    <p class="hint">
+      Only needed for private repos (or to avoid API rate limits). Use a personal access token with
+      read access to repository contents. The token stays in this browser's local extension storage (it is not synced) and is
+      only sent to api.github.com.
+    </p>
+    <label for="token">Personal access token</label>
+    <input id="token" type="password" autocomplete="off" />
+    <button id="save" type="button">Save</button>
+    <span id="status" role="status"></span>
+    <script src="options.js"></script>
+  </body>
+</html>

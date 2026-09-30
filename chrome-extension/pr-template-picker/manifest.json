@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "PR Template Picker",
+  "version": "1.0.0",
+  "description": "Adds a dropdown to GitHub's new pull request page for choosing a PR template.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["lib.js", "content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
